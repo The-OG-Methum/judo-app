@@ -6,7 +6,7 @@ namespace JudoApp.Models
 {
     public class Athlete
     {
-        // Auto-incremented primary key
+        // primary key
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public TrainingPlan TrainingPlan { get; set; } = TrainingPlan.Beginner;
@@ -59,7 +59,7 @@ namespace JudoApp.Models
         // Weight status
         public string GetWeightStatus() => WeightCategoryExtensions.GetWeightStatus(CurrentWeight, CompetitionCategory);
 
-        // Reports
+        // Reports generating
         public string GenerateItemizedReport()
         {
             var report = new StringBuilder();

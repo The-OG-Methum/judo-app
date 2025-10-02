@@ -90,7 +90,7 @@ namespace JudoApp
             }
         }
 
-        
+
 
         private async void BtnSave_Click(object? sender, EventArgs e)
         {
@@ -124,7 +124,7 @@ namespace JudoApp
             // Parse athlete name
             athlete.Name = txtAthleteName.Text.Trim();
 
-            
+
 
             // Parse training plan (remove emoji from text)
             var trainingText = cmbTrainingPlan.Text;
@@ -275,6 +275,16 @@ namespace JudoApp
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCompetitionCategory_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

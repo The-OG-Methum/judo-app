@@ -8,12 +8,12 @@ namespace JudoApp.Models
 {
     public enum WeightCategory
     {
-        Flyweight,          // Up to 60kg
-        Lightweight,        // 60-66kg
-        LightMiddleweight,  // 66-73kg
-        Middleweight,       // 73-81kg
-        LightHeavyweight,   // 81-90kg
-        Heavyweight         // 90kg+
+        Flyweight,          // 66kg
+        Lightweight,        // 73kg
+        LightMiddleweight,  // 81kg
+        Middleweight,       // 90kg
+        LightHeavyweight,   // 100kg
+        Heavyweight         // 100kg+
     }
 
     public static class WeightCategoryExtensions
@@ -22,12 +22,12 @@ namespace JudoApp.Models
         {
             return category switch
             {
-                WeightCategory.Flyweight => (0, 60),
-                WeightCategory.Lightweight => (60, 66),
-                WeightCategory.LightMiddleweight => (66, 73),
-                WeightCategory.Middleweight => (73, 81),
-                WeightCategory.LightHeavyweight => (81, 90),
-                WeightCategory.Heavyweight => (90, double.MaxValue),
+                WeightCategory.Flyweight => (0,66),
+                WeightCategory.Lightweight => (66, 73),
+                WeightCategory.LightMiddleweight => (73, 81),
+                WeightCategory.Middleweight => (81, 90),
+                WeightCategory.LightHeavyweight => (90, 100),
+                WeightCategory.Heavyweight => (100, double.MaxValue),
                 _ => (0, 0)
             };
         }
